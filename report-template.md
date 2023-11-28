@@ -18,22 +18,25 @@ The Logistic Regression Algorithm has been selected as the optimal tool for our 
 
 Upon utilizing the dataset furnished by the lending company, I constructed a Logistic Regression Model that yielded an impressive accuracy score of 95%. Notwithstanding this high accuracy, it is noteworthy that the model's recall value for non-healthy loans stands at 0.91, which is comparatively lower than the recall value of 0.99 for healthy loans. This discrepancy implies that the model exhibits a greater proficiency in predicting loan statuses as healthy rather than non-healthy. The underlying cause can be attributed to dataset imbalance, where one class label (in this instance, healthy loans) significantly outweighs the other (non-healthy loans).
 
+
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 1: Logistic Regression Model fitted with Imbalanced Data
+  * According to the classification report, it predicts healthy loans (0) 100% of the time, while it predicted high-risk loans     (1) 85% of the time.
+  * Since this model has imbalanced data, it has a higher probability of making mistakes
+    
+* Machine Learning Model 2: Logistic Regression Model fitted with Balanced (oversampled) Data 
+  * The Logistic Regression model fitted with the OverSampled DataSet predicted healthy loans (0) 100% of the time and             predicted non-healthy (1) loans 84% of the time.
+  * the model made 1% of mistakes when predicting healthy loans and made 1% of mistakes when predicted non-healthy loans.
+  * The model generated an accuracy score of 99% due to the dataset being balanced.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+The Logistic Regression model, trained on Oversampled data, exhibited superior performance compared to the model trained on Imbalanced data. This improvement is attributed to the balanced nature of the data, resulting in a higher accuracy score and an elevated recall. These outcomes suggest that the model is poised to minimize errors significantly when classifying non-healthy loans.
 
-If you do not recommend any of the models, please justify your reasoning.
+For the lending company, reducing False Positives is crucial, given the heightened risk of financial loss when misclassifying non-healthy loans as healthy. The ensuing data is presented in the confusion matrices, offering insights into the model's accurate and inaccurate predictions of healthy and non-healthy loans.
+
+I would recommend using Model 2 Logistic Regression Model fitted with Balanced data.
