@@ -22,11 +22,11 @@ Upon utilizing the dataset furnished by the lending company, I constructed a Log
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1: Logistic Regression Model fitted with Imbalanced Data
   * According to the classification report, it predicts healthy loans (0) 100% of the time, while it predicted high-risk loans     (1) 85% of the time.
   * Since this model has imbalanced data, it has a higher probability of making mistakes
+
+ ![imbalanced_data](https://github.com/dahmadi/CreditRisk/blob/8f45320577216c99f391669cf096d2834b5d27dd/Module%2012%20Images/Imbalanced%20Data%20Report.png)
     
 * Machine Learning Model 2: Logistic Regression Model fitted with Balanced (oversampled) Data 
   * The Logistic Regression model fitted with the OverSampled DataSet predicted healthy loans (0) 100% of the time and             predicted non-healthy (1) loans 84% of the time.
